@@ -1,0 +1,51 @@
+body{
+    background-image: url("Imagenes/fondo.jpg");
+   background-size: 1900px 800px;
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 100vh;
+}
+
+form{
+    background-image: url("Imagenes/canasta.jpg");
+    background-position: center;
+    margin: auto;
+    width: flex;
+    max-width: 500px;
+    padding: 30px;
+    border: 1px solid #999999;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+     
+    margin-bottom: 20px;
+    color:#F2F5A9;
+
+}
+
+input{
+    display: block;
+    padding: 10px;
+    width: 250px;
+    margin: 30px 0px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+input[type="submit"]{
+     background: linear-gradient(#FFDA63, #FFB940);
+    border: 0;
+    color:  brown;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+  
+}
+input[type="submit"]:hover{
+    opacity: 1;
+}
+input[type="submit"]:active{
+    transform: scale(0.95);
+}

@@ -1,0 +1,19 @@
+body{
+    background-image: url("Imagenes/2.jpg");
+   background-size: 1900px 800px;
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 100vh;
+     text-align: center;
+}
+
+form{
+    background-image: url("Imagenes/1.jpg");
+    background-position: center;
+    margin: auto;
+    width: flex;
+    max-width: 500px;
+    padding: 30px;
+    border: 1px solid #999999;
+    border-radius: 10px;
+}
