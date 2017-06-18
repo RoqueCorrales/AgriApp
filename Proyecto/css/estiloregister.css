@@ -16,4 +16,28 @@ form{
     padding: 30px;
     border: 1px solid #999999;
     border-radius: 10px;
+    font-family: Impact, Charcoal, sans-serif;
+   
+}
+input[type="submit"]{
+     background: linear-gradient(#FFDA63, #FFB940);
+    border: 0;
+    color:  brown;
+    padding: 10px 30px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+  
+}
+input[type ="file"]{
+    border: 0;
+    cursor: pointer;
+    border-radius: 20px;
+}
+input{
+    border: 0;
+    border-radius: 5px;
+}
+h2{
+    text-align:center;
 }
