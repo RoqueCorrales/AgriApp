@@ -1,0 +1,94 @@
+ 
+header {
+	margin-top:20px;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+    background-color:  #cacfd2;
+
+}
+body{
+    background-color: #95a5a6 ; 
+     background-image: url("Imagenes/7.jpg");
+   background-size: 1600px 750px;
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 100vh;
+    
+}
+
+ 
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:20px auto;
+	
+	width:90%;
+}
+form{
+ 
+   padding:2px;
+   cursor:pointer;
+   display:block;
+   width:290px;
+   margin: 0 auto;
+   text-align:left;
+   
+}
+input[type="submit"]{
+     background: linear-gradient(#FFDA63, #FFB940);
+    border: 0;
+    color:  brown;
+    padding: 10px 30px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+  
+}
+input[type="submit"]:hover{
+    opacity: 1;
+}
+input[type="submit"]:active{
+    transform: scale(0.95);
+}
+ 
+nav ul {
+	list-style:none;
+}
+ 
+nav > ul {
+	display:table;
+	width:100%;
+	background: #3498db
+;
+	position:relative;
+}
+ 
+nav > ul li {
+	display:table-cell;
+}
+ 
+ 
+nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+nav > ul > li > ul > li a:hover {
+	background:#5da5a2;
+}
+
+ 
