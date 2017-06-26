@@ -1,5 +1,5 @@
 body{
-    background-color:  #a6acaf ;
+   background-image: url("Imagenes/2.jpg");
    background-size: 1900px 800px;
     background-repeat: no-repeat;
     display: flex;
@@ -8,7 +8,7 @@ body{
 }
 
 form{
-    background-image: url("Imagenes/8.jpg");
+      background-image: url("Imagenes/agua.jpg");
     background-position: center;
     margin: auto;
     width: flex;
@@ -38,6 +38,54 @@ input{
     border: 0;
     border-radius: 5px;
 }
-h2{
-    text-align:center;
+
+
+div#header {
+	margin-top:20px;
+    width: 100%;
+    height: 110px;
+    position: absolute;
+ border: 1px solid #999999;
+     border-radius :10px;
+   
+
 }
+input[type="submit"]:hover{
+    opacity: 1;
+}
+input[type="submit"]:active{
+    transform: scale(0.95);
+}
+nav ul {
+	list-style:none;
+}
+ 
+nav > ul {
+	display:table;
+    border-radius: 5px;
+	width:15%;
+	background: #3498db
+;
+	
+}
+ 
+nav > ul li {
+	display:table-cell;
+}
+ 
+ 
+nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+

@@ -1,14 +1,18 @@
 body{
    background-color: #95a5a6 ; 
-   background-size: 1900px 800px;
+      background-image: url("Imagenes/tierra.jpg");
+   background-size: 1600px 750px;
+    background-repeat: no-repeat;
+  
    
 }
 div#header {
 	margin-top:20px;
     width: 100%;
-    height: 150px;
+    height: 120px;
+ border: 1px solid #999999;
+     border-radius :10px;
    
-    background-color:  #cacfd2;
 
 }
 
@@ -62,10 +66,11 @@ nav ul {
  
 nav > ul {
 	display:table;
+    border-radius: 5px;
 	width:15%;
 	background: #3498db
 ;
-	position:relative;
+	
 }
  
 nav > ul li {
@@ -78,7 +83,6 @@ nav > ul li a {
 	display:block;
 	line-height:20px;
 	padding:20px;
-	position: relative;
 	text-align:center;
 	text-decoration:none;
 	-webkit-transition: all .3s ease;
@@ -90,4 +94,13 @@ nav > ul li a {
  
 nav > ul > li > ul > li a:hover {
 	background:#5da5a2;
+}
+nav {
+    top:-5px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:20px auto;
+	
+	width:90%;
 }
