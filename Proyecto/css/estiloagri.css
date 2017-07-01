@@ -1,4 +1,4 @@
- 
+
 header {
 	margin-top:20px;
     width: 100%;
@@ -9,7 +9,7 @@ header {
 }
 body{
     background-color: #95a5a6 ; 
-     background-image: url("Imagenes/7.jpg");
+     background-image: url("Imagenes/cambio.jpg");
    background-size: 1600px 750px;
     background-repeat: no-repeat;
   
@@ -50,18 +50,23 @@ input[type="submit"]{
     opacity: 0.8;
     cursor: pointer;
     border-radius: 20px;
-     transform:translateX(30px);
+     transform:translateX(90px);
 
   
 }
 input[type="submit"]:hover{
     opacity: 1;
+    
 }
 input[type="text"]{
     border-radius: 5px;
+    width: 300px;
+    height: 30px
+    
 }
 input[type="submit"]:active{
     transform: scale(0.95);
+     transform:translateX(90px);
 }
  
 nav ul {
