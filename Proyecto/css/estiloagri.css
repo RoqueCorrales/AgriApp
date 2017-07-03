@@ -66,12 +66,15 @@ input[type="text"]{
 }
 input[type="submit"]:active{
     transform: scale(0.95);
-     transform:translateX(90px);
+   
 }
- 
+nav{
+    transform: translateX(60px)
+}
 nav ul {
 	list-style:none;
     border-radius: 5px;
+    
 }
  
 nav > ul {
@@ -84,13 +87,14 @@ nav > ul {
  
 nav > ul li {
 	display:table-cell;
+    transform: translateX(10px)
 }
  
  
 nav > ul li a {
 	color:#fff;
 	display:block;
-	line-height:20px;
+	line-height:15px;
 	padding:20px;
 	position: relative;
 	text-align:center;

@@ -1,0 +1,142 @@
+*{
+    border: 0;
+    margin :0;
+    padding: 0;
+}
+body{
+    background-image: url(Imagenes/2.jpg);
+    background-size: 1600px 750px;
+      background-repeat: no-repeat;
+}
+
+@keyframes cambio {
+    from {background-image: url(Imagenes/Campesino.jpg);}
+    to {background-image: url(Imagenes/com.jpg)}
+}
+header{
+
+    
+     background-repeat: no-repeat;
+    
+}
+
+#frase{
+    height: 250px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(Imagenes/Campesino.jpg);
+    background-size: cover;
+       background-repeat: no-repeat;
+    opacity: 10px;
+    border: ridge;
+     animation-name: cambio;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    background-clip: border-box;
+    
+    
+}
+#inicio{
+    width: 800px;
+    margin-left: 500px;
+    color: #FF8C00;
+    font-family:Segoe Script;
+    font-style: italic;
+     font-size: 40px;
+}
+#medio{
+    width: 400px;
+    margin-left: 1050px;
+    color: #1E90FF;
+      font-family:Segoe Script;
+    font-style: italic;
+    font-size: 40px;
+}
+#final{
+    width: 300px;
+    margin-left: 1090px;
+    color: #008000;
+   font-family:Segoe Script;
+    font-style: italic;
+    font-size: 50px;
+}
+#referencia{
+    height: 220px;
+}
+#referencia #mision{
+    margin-top: 50px;
+    height: 200px;
+    width: 650px;
+    display: inline-block;
+   padding-left: 5px;
+    padding-right: 5px;
+    background-image: url(Imagenes/03.jpg);
+    background-repeat: no-repeat;
+     background-size: cover;
+     border: outset;
+    margin-left: 70px
+    
+    
+}
+.mis{
+    font-style: oblique;
+    font-weight: bold;
+    
+    
+}
+#referencia #vision{
+     height: 200px;
+    width: 600px;
+    display: inline-block;
+     padding-left: 5px;
+    padding-right: 5px;
+     background-image: url(Imagenes/02.jpg);
+    background-repeat: no-repeat;
+    border: outset;
+    margin-left: 70px;
+     background-size: cover;
+    
+}
+
+nav > ul {
+	display:table;
+    position:absolute;
+		top: 5px;
+		right: -100px;
+    border-radius: 5px;
+    border: 1px solid #999999;
+	background-color:azure;
+    opacity: 2px;
+;
+	
+}
+ 
+nav > ul li {
+	display:table-cell;
+}
+ 
+ 
+nav > ul li a {
+	
+	display:block;
+	line-height:20px;
+	padding:20px;
+	text-align:center;
+	text-decoration:none;
+	
+}
+ 
+nav > ul > li > ul > li a:hover {
+	background:#5da5a2;
+}
+nav {
+    top:-1px;
+    position: absolute;
+    left:0px;
+    right:0;
+	margin:20px;
+	height: 80px;
+	width:90%;
+}
+

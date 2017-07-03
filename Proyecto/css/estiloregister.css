@@ -24,7 +24,7 @@ input[type="submit"]{
     border: 0;
     color:  brown;
     padding: 10px 30px;
-    opacity: 0.8;
+    opacity: 1px;
     cursor: pointer;
     border-radius: 20px;
   
@@ -41,15 +41,47 @@ input{
 h2{
     text-align:center;
 }
-header{
-margin-top:20px;
- width: 1800px;
-  height: 100px;
- position: absolute;
-  top: 0%;
-  left: -9%;
+
+nav > ul {
+	display:table;
+    position:absolute;
+		top: 5px;
+		right: -100px;
+    border-radius: 5px;
     border: 1px solid #999999;
-    border-radius: 10px;
+	
+;
+	
+}
  
-    
+nav > ul li {
+	display:table-cell;
+}
+ 
+ 
+nav > ul li a {
+	
+	display:block;
+	line-height:20px;
+	padding:20px;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+nav > ul > li > ul > li a:hover {
+	background:#5da5a2;
+}
+nav {
+    top:-1px;
+    position: absolute;
+    left:0px;
+    right:0;
+	margin:20px;
+	height: 80px;
+	width:90%;
 }
