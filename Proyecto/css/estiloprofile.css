@@ -1,0 +1,160 @@
+*{
+    border: 0;
+    margin :0;
+    padding: 0;
+}
+
+@keyframes cambio {
+    from {background-image: url(Imagenes/5.jpg);}
+    to {background-image: url(Imagenes/com.jpg)}
+}
+body{
+    background-image: url(Imagenes/04.jpg);
+    
+}
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:28px auto;
+	margin-left: 77px;
+	width:91%;
+}
+nav{
+    transform: translateX(60px)
+}
+nav ul {
+	list-style:none;
+    border-radius: 5px;
+    
+}
+ 
+nav > ul {
+	display:table;
+	width:100%;
+	background: #3498db
+;
+	position:relative;
+}
+ 
+nav > ul li {
+	display:table-cell;
+    transform: translateX(10px)
+}
+ 
+ 
+nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:15px;
+	padding:20px;
+    position: relative;
+	text-align:center;
+    width: 50px;
+     transform: translateX(1250px)
+    
+    
+	
+}
+ 
+nav > ul > li > ul > li a:hover {
+	background:#5da5a2;
+}
+#contenedor{
+    margin-left: 20px;
+    width: 1500px;
+    height: 240px;
+}
+#contenedor #buscar{
+    transform: translateY(-105px);
+      border: outset;
+    width: 200px;
+    height: 220px;
+    margin-left: 100px;
+      display: inline-block;
+}
+#contenedor #productos{
+    width: 200px;
+    height: 220px;
+    margin-left: 100px;
+      display: inline-block;
+     border: outset;
+     transform: translateY(-85px);
+    
+}
+#contenedor #informacion{
+    width: 200px;
+    height: 220px;
+    margin-left: 100px;
+      display: inline-block;
+     border: outset;
+     transform: translateY(-105px);
+    
+}
+#contenedor #encontrar{
+    margin-top: 10px;
+    width: 200px;
+    height: 220px;
+    margin-left: 100px;
+      display: inline-block;
+      border: outset;
+}
+#anuncios{
+    margin-top: 20px;
+    border-radius: 2px;
+    width: 1480px;
+    height: 250px;
+    border: outset;
+    padding: 10px;
+    margin-left: 15px;
+    background-image: url(Imagenes/5.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+    animation-name: cambio;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    background-clip: border-box;
+    
+}
+
+.find{
+ 
+   padding:2px;
+   cursor:pointer;
+   display:block;
+   width:150px;
+   margin: 0 auto;
+   text-align:left;
+   transform:translateY(80px);
+
+   
+
+
+
+   
+}
+input[type="submit"]{
+     background: linear-gradient(#FFDA63, #FFB940);
+    border: 0;
+    color:  brown;
+    padding: 10px 30px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+     transform:translateX(50px);
+
+  
+}
+input[type="submit"]:hover{
+    opacity: 1;
+    
+}
+input[type="text"]{
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px
+    
+}
+
