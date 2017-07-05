@@ -64,10 +64,7 @@ input[type="text"]{
     height: 30px
     
 }
-input[type="submit"]:active{
-    transform: scale(0.95);
-   
-}
+
 nav{
     transform: translateX(60px)
 }
