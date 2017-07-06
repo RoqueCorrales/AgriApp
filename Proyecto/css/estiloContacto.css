@@ -51,12 +51,12 @@ nav {
 }
 #contenedor #mapa{
     width: 600px;
-    transform: translateX(350px);
+    transform: translateX(370px);
         display:inline-block;
 }
 #contenedor #listaProductos{
-    width: 300px;
-    height: 500px;
+    width: 350px;
+    height: 220PX;
     display: block;
     transform: translateY(-500px);
     border: outset;
@@ -67,14 +67,15 @@ nav {
     margin-left: 1000px;
     width: 400px;
     height: 450px;
-    transform: translateY(-980px);
+    transform: translateY(-685px);
     background-image: url(Imagenes/1.jpg);
     border: outset;
     
 }
 #botones{
     width: 300px;
-  transform: translateY(-15px);
+    
+  transform: translateY(20px);
     margin-left: 20px
 }
 #contenedor #listaProductos #tablaLista .encabezado{
@@ -82,6 +83,19 @@ nav {
     
     
 }
+#contenedor #listaProductos #Informacion #infovendedor{
+      border: outset;
+}
+#contenedor #listaProductos #Informacion .encabezado{
+      border: outset;
+}
+
+#botones{
+    width: 300px;
+  transform: translateY(-15px);
+    margin-left: 20px
+}
+
 
 input[type="submit"]{
      background-color: white;
