@@ -72,12 +72,6 @@ nav {
     border: outset;
     
 }
-#botones{
-    width: 300px;
-    
-  transform: translateY(20px);
-    margin-left: 20px
-}
 #contenedor #listaProductos #tablaLista .encabezado{
     border: outset;
     
@@ -89,35 +83,22 @@ nav {
 #contenedor #listaProductos #Informacion .encabezado{
       border: outset;
 }
-
-#botones{
+#contenedor #buscar{
     width: 300px;
-  transform: translateY(-15px);
-    margin-left: 20px
-}
-
-
-input[type="submit"]{
-     background-color: white;
-    border: 0;
-    color:  black;
-    padding: 10px 30px;
-    opacity: 0.8;
-    cursor: pointer;
-    border-radius: 20px;
-     transform:translateX(50px);
-      animation-name: cambio;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    background-clip: border-box;
-
-  
-}
-input[type="submit"]:hover{
-    opacity: 1;
+    transform: translateY(-950px);
+    border: outset;
+    margin-left: 20px;
     
 }
-@keyframes cambio {
-    from {background-color: white}
-    to {background-color: #F5B041}
+#contenedor #productos{
+    width: 200px;
+    height: 200px;
+    border: outset;
+    transform: translateY(-930px);
+    margin-left: 60px;
+}
+#contenedor #productos #h1{
+    border: outset;
+    transform: translateY(-18px);
+    text-align: center;
 }

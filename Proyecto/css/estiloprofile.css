@@ -104,8 +104,8 @@ nav > ul > li > ul > li a:hover {
     border: outset;
 }
 #contenedor #productos{
-    width: 200px;
-    height: 220px;
+    width: 320px;
+    height: 239px;
     margin-left: 100px;
       display: inline-block;
      border: outset;
@@ -128,16 +128,16 @@ nav > ul > li > ul > li a:hover {
     margin-left: 100px;
       display: inline-block;
       border: outset;
-    transform: translateY(-6px);
+    transform: translateY(-10px);
 }
 #anuncios{
     margin-top: 20px;
     border-radius: 2px;
-    width: 1480px;
-    height: 250px;
+    width: 1600px;
+    height: 300px;
     border: outset;
     padding: 10px;
-    margin-left: 15px;
+    margin-left: 35px;
     background-image: url(Imagenes/5.jpg);
      background-repeat: no-repeat;
      background-size: cover;
@@ -145,6 +145,7 @@ nav > ul > li > ul > li a:hover {
     animation-duration: 12s;
     animation-iteration-count: infinite;
     background-clip: border-box;
+    transform: translateY(50px);
     
 }
 
@@ -174,7 +175,7 @@ input[type="submit"]{
     border-radius: 20px;
 
     transform: translateY(160px);
-    margin-left: 80px;
+    margin-left:0px;
 
   
 }
