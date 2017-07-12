@@ -100,3 +100,12 @@ nav {
     transform: translateX(650px);
     
 }
+
+footer{
+    width: 250px;
+    text-align: center;
+    transform: translateY(250px);
+    margin-left: 800px;
+    font-size: 12px;
+    
+}
