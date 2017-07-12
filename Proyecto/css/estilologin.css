@@ -44,7 +44,15 @@ input{
     border-radius: 5px;
     font-size: 20px;
 }
-input[type="submit"]{
+button{
+    display: inline-block;
+    padding: 10px;
+    width: 250px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+button[type="button"]{
      background: linear-gradient(#FFDA63, #FFB940);
     border: 0;
     color:  brown;
@@ -53,10 +61,10 @@ input[type="submit"]{
     border-radius: 20px;
   
 }
-input[type="submit"]:hover{
+button[type="button"]:hover{
     opacity: 1;
 }
-input[type="submit"]:active{
+button[type="button"]:active{
     transform: scale(0.95);
 }
 

@@ -88,7 +88,7 @@ nav > ul > li > ul > li a:hover {
 #contenedor{
     margin-left: 20px;
     width: 1500px;
-    height: 240px;
+    height: 250px;
 }
 #contenedor #buscar{
     transform: translateY(-111px);
@@ -105,20 +105,27 @@ nav > ul > li > ul > li a:hover {
 }
 #contenedor #productos{
     width: 320px;
+    
     height: 239px;
     margin-left: 100px;
       display: inline-block;
      border: outset;
-     transform: translateY(-85px);
+     transform: translateY(-68px);
     
 }
 #contenedor #informacion{
     width: 200px;
-    height: 220px;
+    height: 100px;
     margin-left: 100px;
       display: inline-block;
      border: outset;
      transform: translateY(35px);
+    
+}
+#contenedor #informacion #progressbar{
+    margin: 10px;
+    height: 20px;
+    
     
 }
 #contenedor #encontrar{
@@ -165,7 +172,7 @@ nav > ul > li > ul > li a:hover {
 
    
 }
-input[type="submit"]{
+button[type="button"]{
      background: linear-gradient(#FFDA63, #FFB940);
     border: 0;
     color:  brown;
@@ -179,7 +186,7 @@ input[type="submit"]{
 
   
 }
-input[type="submit"]:hover{
+button[type="button"]:hover{
     opacity: 1;
     
 }
@@ -192,7 +199,7 @@ input[type="text"]{
     
 }
 
-input[type="submita"]{
+button[type="buttona"]{
      background: linear-gradient(#FFDA63, #FFB940);
     border: 0;
     color:  brown;
@@ -201,82 +208,12 @@ input[type="submita"]{
     cursor: pointer;
     border-radius: 20px;
  transform: translateX(50px);
-    width: 50px;
+    width: 100px;
     
 
   
 }
-input[type="submita"]:hover{
+button[type="buttona"]:hover{
     opacity: 1;
     
-}
-#calificaciones {
-    width: 165px; 
-    height: 16px;
-    display: block;
-    margin: 20px;
-}
-#calificaciones #menos{
-    width: 20px;
-    display: block;
-     border: outset;
-    background-color: aliceblue;
-    text-align: center;
-    height: 10px;
-    transform: translateY(-2.5px);
-}
-#calificaciones #rojo{
-    width: 20px;
-    height: 10px;
-    display: block;
-    margin-left: 22px;
-    transform: translateY(-18px);
-    border: outset;
-    background-color: red;
-}
-#calificaciones #naranja{
-    width: 20px;
-    height: 10px;
-    display: block;
-    margin-left: 45px;
-    transform: translateY(-33px);
-    border: outset;
-    background-color: orange;
-}
-#calificaciones #amarillo{
-       width: 20px;
-    height: 10px;
-    display: block;
-    margin-left: 67px;
-    transform: translateY(-47.5px);
-    border: outset;
-    background-color: yellow; 
-}
-#calificaciones #verdeclaro{
-        width: 20px;
-    height: 10px;
-    display: block;
-    margin-left: 92px;
-    transform: translateY(-62.5px);
-    border: outset;
-    background-color: yellowgreen;
-}
-#calificaciones #verde{
-        width: 20px;
-    height: 10px;
-    display: block;
-    margin-left: 117px;
-    transform: translateY(-77.2px);
-    border: outset;
-    background-color: green;
-}
-#calificaciones #suma{
-        width: 20px;
-    height: 10px;
-    display: block;
-    margin-left: 141px;
-    transform: translateY(-91.7px);
-    border: outset;
-    background-color:aliceblue;
-    text-align: center;
 }

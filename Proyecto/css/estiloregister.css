@@ -19,7 +19,7 @@ form{
     font-family: Impact, Charcoal, sans-serif;
    
 }
-input[type="submit"]{
+button[type="button"]{
      background: linear-gradient(#FFDA63, #FFB940);
     border: 0;
     color:  brown;
@@ -35,6 +35,10 @@ input[type ="file"]{
     border-radius: 20px;
 }
 input{
+    border: 0;
+    border-radius: 5px;
+}
+button{
     border: 0;
     border-radius: 5px;
 }

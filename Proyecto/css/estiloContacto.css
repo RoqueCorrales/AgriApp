@@ -102,3 +102,49 @@ nav {
     transform: translateY(-18px);
     text-align: center;
 }
+
+button[type="button"]{
+     background: linear-gradient(#FFDA63, #FFB940);
+    border: 0;
+    color:  brown;
+    padding: 10px 30px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+
+    transform: translateY(-20px);
+    margin-left:45px;
+
+  
+}
+button[type="button"]:hover{
+    opacity: 1;
+    
+}
+
+
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+
+.clasificacion {
+    width: 120px;
+    font-size: 30px;
+    transform: translateX(40px);
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+  color: green;
+}
+
+input[type="radio"]:checked ~ label {
+  color: green;
+}

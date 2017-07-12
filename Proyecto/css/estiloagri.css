@@ -42,7 +42,7 @@ nav {
 
    
 }
-input[type="submit"]{
+button[type="button"]{
      background: linear-gradient(#FFDA63, #FFB940);
     border: 0;
     color:  brown;
@@ -54,7 +54,7 @@ input[type="submit"]{
 
   
 }
-input[type="submit"]:hover{
+button[type="button"]:hover{
     opacity: 1;
     
 }
