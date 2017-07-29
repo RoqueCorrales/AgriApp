@@ -1,0 +1,33 @@
+#body-index{
+   background-size: cover; 
+    background-color: #95a5a6 ; 
+     background-image: url("Imagenes/cambio.jpg");
+         
+          background-size: 100%;
+  
+  
+}
+#buscador-index{
+   
+    transform: translateY(605%);
+    
+}
+#logo{
+    color: white;
+
+}
+
+#body-buscar{
+     background-size: cover; 
+    background-color: #95a5a6 ; 
+     background-image: url("Imagenes/6.jpg");
+         
+          background-size: 100%;
+}
+#table{
+    background-color:beige;
+}
+#titleb{
+    background-color: #E0F8F1;
+    border:outset;
+}
