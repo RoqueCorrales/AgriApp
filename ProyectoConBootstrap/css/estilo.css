@@ -27,9 +27,11 @@
 #table{
     background-color:beige;
 }
+
 #titleb{
     background-color: #E0F8F1;
     border:outset;
+    text-align: center;
 }
 #body-conocenos{
     background-size: cover; 
@@ -59,4 +61,7 @@
   #im{
       width: 30%;
       height: 20%;
+  }
+  .clasificacion{
+text-align: center;
   }
