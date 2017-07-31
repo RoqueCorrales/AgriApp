@@ -64,4 +64,14 @@
   }
   .clasificacion{
 text-align: center;
+
   }
+#form{
+    text-align: center;
+    
+}
+#contenedor{
+    border: outset;
+     background-color: #E0F8F1;
+     width: 40%;
+}
