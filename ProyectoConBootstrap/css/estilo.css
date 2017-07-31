@@ -71,7 +71,19 @@ text-align: center;
     
 }
 #contenedor{
-    border: outset;
+    border:outset;
      background-color: #E0F8F1;
+  
      width: 40%;
+}
+.adCentrado{
+    text-align: center;
+}
+.adIzq{
+    text-align: left;
+}
+#h3Producto{
+    font-family: sans-serif;
+    border: olive;
+    border: outset;
 }

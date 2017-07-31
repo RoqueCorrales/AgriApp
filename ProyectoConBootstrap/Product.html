@@ -2,88 +2,96 @@
 <html lang = "es">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="keywords" content="footer, contact, form, icons" />
         <title>AgriApp</title>
-        <link rel= "stylesheet" href="css/estiloproduct.css"
-    </head>
-<body>
-    
-      <header>
-    
-    <div id = "header">
-<div class="imagen">
-    <img class="imagen" src="css/Imagenes/Logo.jpg" alt="logo">;
-    
-</div>                    
-<nav class ="Menu">
-    <ul>
-        <li><a href="/Proyecto/AgriApp.html"> Inicio </a></li>
-        <li><a href="/Proyecto/Conocenos.html"> Conocenos </a></li>
        
- 
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel= "stylesheet" href="css/estilo.css">
+
+   <body id="body-buscar">
+<header>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav ">
+        <h1 id="logo">AGRIAPP</h1>
+    </ul>
+         <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+     
+      <li><a href="#"><span class="glyphicon glyphicon-apple"></span>Conocenos</a></li>
+      
+    </ul>
+  </div>
 </nav>
 
- </div>
+        
+</header>
+<div class="container-fluid bg-1 text-center">
 
- 
-    
-    </header>
-    
+  <img src="css/Imagenes/Logo.jpg" class="img-thumbnail" alt="Bird">
 
-    
-    <form name="Producto">
-          <div name="principal">
-    <h2> Registrar Producto</h2>
-    </div>
- <table>
-    
-         <tr>
-             <td>Name: </td>
-             <td> <select name="Product" size="1" onChange="showtext()">
+</div>
+
+<br>
+<br>
+<br>
+<div id= "contenedor"class="container">
+       
+    <div class="row">
+        <div class="col">
+<form id="form"class="form">
+ <h3 id="h3Producto">Registro de nuevo Producto.</h3>
+  <div class="form-group">
+    <label >Nombre: </label>
+   <select name="Product" size="1" onChange="showtext()">
 <option value="Apple">Manzana</option>
 <option value="Potato">Papa</option> 
 <option value="Carrot">Aguacate</option> 
 <option value="Coffee">Cafe</option> 
 <option value="Banana">Banano</option>
-<option value="Other">Other</option> </td>
-
-         </tr>
-             <tr>
-             <td>Categoria:</td>
-             <td> <select name="Categoria" size="1" onChange="showtext()">
+<option value="Other">Other</option>
+   </select>
+  </div>
+   
+  <div class="form-group">
+ <label >Categoria: </label>
+<select name="Categoria" size="1" onChange="showtext()">
 <option value="AAA">Primera</option>
-<option value="AA">Segunda</option> </td>
+<option value="AA">Segunda</option>
+</select>
+</div>
+  <div class="form-group">
+    <label >Descripcion:</label>
+    <input  type="text" placeholder="Descripcion"> 
+  </div>
 
-         </tr>
          
-             <tr>
-             <td>Descripcion:</td>
-             <td> <input  type="text" placeholder="Descripcion" </td>
-
-         </tr>
+        <div class="form-group">
+    <label >Precio:</label>
+    <input  type="text" placeholder="Precio"> 
+  </div>
+     
          
-             <tr>
-             <td>Precio:</td>
-             <td> <input type="password" placeholder="Precio"> </td>
-
-         </tr>
         
-         
-         </tr>
-             <tr>
-             <td>Imagen: </td>
-             <td> <input type="file" name ="Foto"</td>
-
-         </tr>
-
-       
-
+       <div class="form-group">
+    <label >Foto:</label>
+    <span class="adCentrado"><input type="file" ></span>
+    
+  </div>
    
 
- </table>
- 
-  <a href="/Proyecto/Perfil.html"><button type="button">Registrar </button>    </a>  
 
+ 
+  <a href="/Proyecto/Perfil.html"><button type="button"class="btn btn-success">Registrar </button>    </a>  
+<br>
+<br>
 </form>
+</div>
+</div>
+</div>
 
 
 
