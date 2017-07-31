@@ -31,3 +31,32 @@
     background-color: #E0F8F1;
     border:outset;
 }
+#body-conocenos{
+    background-size: cover; 
+    background-color: #95a5a6 ; 
+     background-image: url("Imagenes/2.jpg");
+         
+          background-size: 100%;
+}
+
+#mision{
+    background-color:#F2F2F2;
+    border:outset;
+}
+#vision{
+    background-color:#F2F2F2;
+    border:outset;
+}
+  .carousel-inner > .item > img,
+ .carousel-inner > .item > img {
+      width: 40%;
+      height: 20%;
+      margin: auto;
+  }
+  #inicio{
+      color: #CEECF5;
+  }
+  #im{
+      width: 30%;
+      height: 20%;
+  }
