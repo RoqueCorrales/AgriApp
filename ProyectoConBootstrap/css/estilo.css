@@ -94,3 +94,32 @@ text-align: center;
     text-align: center;
 
 }
+#contenedorProductos{
+     border: outset;
+    background-color: #E0F8F1;
+width: 50%;
+text-align: center;
+
+
+}
+#contenedorBuscas{
+   border: outset;
+    background-color: #E0F8F1;
+width: 50%;
+text-align: center;
+    
+
+}
+    .details li {
+      list-style: none;
+    }
+    li {
+        margin-bottom:10px;
+        
+    }
+    #profile{
+        border-bottom:1px solid black
+    }
+    #details{
+        width:5%;
+    }
