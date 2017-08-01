@@ -1,97 +1,57 @@
 <!doctype html>
 <html lang = "es">
     <head>
-    <meta charset="UTF-8">
-    <title>AgriApp</title>
-    <link rel="stylesheet" href="css/estiloregister.css" </head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="keywords" content="footer, contact, form, icons" />
+        <title>AgriApp</title>
+       
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel= "stylesheet" href="css/estilo.css">
 
-    <body>
-        <header>
+   <body id="body-buscar">
+<header>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav ">
+        <h1 id="logo">AGRIAPP</h1>
+    </ul>
+         <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+     
+      <li><a href="#"><span class="glyphicon glyphicon-apple"></span>Conocenos</a></li>
+      
+    </ul>
+  </div>
+</nav>
 
-            <div id="header">
-                <img class="imagen" src="css/Imagenes/Logo.jpg" alt="logo">
-                <nav class="Menu">
-                    <ul>
-                        <li><a href="/Proyecto/AgriApp.html"> Inicio </a></li>
-                        <li><a href="/Proyecto/Conocenos.html"> Conocenos </a></li>
+        
+</header>
+<div class="container-fluid bg-1 text-center">
 
-                </nav>
-            </div>
+  <img src="css/Imagenes/Logo.jpg" class="img-thumbnail" alt="Bird">
 
+</div>
 
-
-        </header>
-        <form name="Register">
+<br>
+<br>
+<br>
+      
+        <div id="Register" class="container">
             <div name="principal">
                 <h2> Actualizar Registro</h2>
             </div>
-            <table>
-
-                <tr>
-                    <td>Nombre: </td>
-                    <td><input type="text" placeholder="Nombre" </td>
-
-                </tr>
-                <tr>
-                    <td>Apellidos:</td>
-                    <td> <input type="text" placeholder="Apellidos" </td>
-
-                </tr>
-
-                <tr>
-                    <td>Usuario:</td>
-                    <td> <input type="text" placeholder="Usuario" </td>
-
-                </tr>
-
-                <tr>
-                    <td>Contraseña:</td>
-                    <td> <input type="password" placeholder="Contraseña"> </td>
-
-                </tr>
-
-
-                <tr>
-                    <td> Confirmar contraseña:</td>
-                    <td> <input type="password" placeholder=" Confirmar contraseña"> </td>
-
-                </tr>
-                <tr>
-                    <td>Telefono:</td>
-                    <td> <input type="text" placeholder="Telefono" </td>
-
-                </tr>
-                <tr>
-                    <td>Correo: </td>
-                    <td> <input type="text" placeholder="Correo" </td>
-
-                </tr>
-                <tr>
-                    <td>Direccion: </td>
-                    <td> <input type="text" placeholder="Direccion" </td>
-
-                </tr>
-                <tr>
-                    <td>Genero: </td>
-                    <td><input type="radio" name="opGender" value="Masculino">Masculino
-                        <input type="radio" name="opGender" value="Femenino">Femenino
-                    </td>
-
-                </tr>
-                <tr>
-                    <td>Foto: </td>
-                    <td> <input type="file" name="Picture" </td>
-
-                </tr>
-
-
-
-
-
-            </table>
-            <a href="/Proyecto/Perfil.html"><button type="button">Actualizar </button>    </a>
-
-        </form>
+           <input type="email" placeholder="&#9993;  Correo" required autofocus><br>
+        <input type="text" placeholder="&#128100;  Usuario" required><br>
+        <input type="password" placeholder="&#128273;  Contrase&ntilde;a" required><br>
+        <input type="password" placeholder="&#128273;  Verificar Contrase&ntilde;a" required><br>
+         <input type="text" placeholder=  "&#128241; Telefono" required><br>
+            <br>
+            <a href="/Proyecto/Perfil.html"><button type="button" class="btn btn-success">Actualizar </button>    </a>
+<br>
+        </div>
 
 
 

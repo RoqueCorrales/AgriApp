@@ -87,3 +87,10 @@ text-align: center;
     border: olive;
     border: outset;
 }
+#Register{
+    width: 20%;
+    border: outset;
+    background-color: #E0F8F1;
+    text-align: center;
+
+}
