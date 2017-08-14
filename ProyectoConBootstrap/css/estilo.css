@@ -14,6 +14,7 @@
 }
 #logo{
     color: white;
+    font-size: 200%;
 
 }
 
@@ -62,6 +63,7 @@
       width: 30%;
       height: 20%;
   }
+ 
   .clasificacion{
 text-align: center;
 
@@ -123,3 +125,30 @@ text-align: center;
     #details{
         width:5%;
     }
+
+/* Footer */
+
+footer{
+   background-color: #2E2E2E;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    text-align: center;
+    color: #CCC;
+}
+
+footer p {
+    padding: 10.5px;
+    margin: 0px;
+    line-height: 100%;
+}
+ .bloque{
+     text-align: center;
+  }
+  #fondoBloque{
+      margin-left:15%;
+      width: 70%;
+        background-color: #E0F8F1;
+  }
