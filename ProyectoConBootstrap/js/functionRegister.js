@@ -1,11 +1,12 @@
 var REG = {
-    property: 10,
+    
 
     initialize: function() {
    
     },
 
-   
+  
+
 
      addUser: function(user) {
 
@@ -30,17 +31,37 @@ var REG = {
 
    },
 
-   confirmPassword: function(){
-    
-     var pass1 =  document.getElementById('contrasenna').value;
-     var pass2 =  document.getElementById('ccontrasenna').value;
-
+   confirmPassword: function(pass1,  pass2){
+  
  if(pass1===pass2){
      return true;
  }
 return false;
 
    },
+   completeFields : function(usuario , pass){
+     
+
+       if(usuario ==="" || pass ===""){
+           return false;
+       }
+       return true;
+   },
+
+     creatorID : function(){
+          var users = [];
+      if (localStorage.getItem('users')) {
+          users = JSON.parse(localStorage.getItem('users'));
+           
+       
+      }
+      var id = users.length + 2;
+      return id;
+
+}
+  
+
+
   
 };
 
