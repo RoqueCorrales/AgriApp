@@ -3,7 +3,8 @@
     background-color: #95a5a6 ; 
      background-image: url("Imagenes/cambio.jpg");
          
-          background-size: 100%;
+          background-size: 100% 100%;
+          background-attachment: fixed;
   
   
 }
@@ -23,7 +24,8 @@
     background-color: #95a5a6 ; 
      background-image: url("Imagenes/6.jpg");
          
-          background-size: 100%;
+                background-size: 100% 100%;
+          background-attachment: fixed;
 }
 #table{
     background-color:beige;
@@ -39,7 +41,8 @@
     background-color: #95a5a6 ; 
      background-image: url("Imagenes/2.jpg");
          
-          background-size: 100%;
+                background-size: 100% 100%;
+          background-attachment: fixed;
 }
 
 #mision{
@@ -80,6 +83,7 @@ text-align: center;
 }
 .adCentrado{
     text-align: center;
+   
 }
 .adIzq{
     text-align: left;
@@ -151,4 +155,9 @@ footer p {
       margin-left:15%;
       width: 70%;
         background-color: #E0F8F1;
+  }
+
+
+  #username{
+      text-align: center; 
   }

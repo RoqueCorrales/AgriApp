@@ -47,7 +47,7 @@
         <span class="caret"></span>
         <ul class="dropdown-menu">
            <li><a href="EditarRegistro.html"> 	&#9998;Editar</a></li>
-           <li><a href="index.html">	&#128274;Cerrar Sesion</a></li>
+           <li><a id="close"href="#">	&#128274;Cerrar Sesion</a></li>
         </ul>
       </li>
       
@@ -65,13 +65,13 @@
                       </div>
                       <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
                           <div class="container" id="profile">
-                            <h2>Nombre</h2>
+                            <h2 id="username">Nombre</h2>
                           </div>
                             <hr>
                           <ul class="container details">
-                            <li><p><span class="glyphicon glyphicon-earphone one" id="details"></span>+91 90000 00000</p></li>
-                            <li><p><span class="glyphicon glyphicon-envelope one" id="details"></span>somerandom@email.com</p></li>
-                            <li><p><span class="glyphicon glyphicon-map-marker one" id="details"></span>Hyderabad</p></li>
+                            <li><label  id="phone" class="glyphicon glyphicon-earphone one"></label></li>
+                            <li><label id="email" class="glyphicon glyphicon-envelope one"></label></li>
+                            <li><label id="address" class="glyphicon glyphicon-map-marker one" ></label></li>
                             <div>
                                 <!-- Trigger the modal with a button -->
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">	&#127813;Productos</button>
@@ -95,7 +95,7 @@
    
   </tr>
     </table>
-     <a href="/Proyecto/Product.html"><button type="button" class="btn btn-success">Registrar </button>    </a>  
+     <a href="Product.html"><button type="button" class="btn btn-success">Registrar </button>    </a>  
     <button type="button" class="btn-danger">Eliminar Seleccionado</button>
     <br>
     <br>
@@ -109,7 +109,7 @@
   </div>
   
 </div>
-
+<br>
 
   <!-- Trigger the modal with a button -->
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModale">	&#128161;Calificacion
@@ -154,7 +154,7 @@
 <footer>
         <p>© 2017<a> TECHNOFIX </a>, All rights reserved 2016-2017.</p>
     </footer>
-
+	<script src="js/javascriptPerfil.js" type="text/javascript"></script>
   <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

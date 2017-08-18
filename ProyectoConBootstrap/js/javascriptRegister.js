@@ -21,6 +21,7 @@ REG.initializeEvents = function() {
           };
          REG.addUser(user); 
         REG.cleanFields();
+        window.location.href="login.html";
           }else{
             alert("Contrasena erronea.")
           }
