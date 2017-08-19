@@ -86,9 +86,10 @@ for (var i = 0; i < users.length; i++) {
 function updateUser(){
      var idUserActive = localStorage.getItem('useractive');
      users = JSON.parse(localStorage.getItem('users'));
-if(document.getElementById('contrasenna').value==document.getElementById('ccontrasenna').value){
+if(document.getElementById('contrasenna').value==document.getElementById('ccontrasenna').value ){
      for (var i = 0; i < users.length; i++) {
-         if((idUserActive==users[i].idUsuario) && (document.getElementById('contrasenna').value == document.getElementById('ccontrasenna').value) && ){
+         if((idUserActive==users[i].idUsuario)){
+
                  users[i].usuario = document.getElementById('usuario').value;
                  users[i].contrasena =document.getElementById('contrasenna').value;
                  users[i].telefono = document.getElementById('telefono').value;
@@ -99,12 +100,12 @@ if(document.getElementById('contrasenna').value==document.getElementById('ccontr
 
 
          }
+        }
          localStorage.setItem('users', JSON.stringify(users));
          alert("Actualizacion Completa");
          location.href ="Perfil.html";
 
-     }
-}else{
+     }else{
               alert("Error");
          }
 
