@@ -7,11 +7,17 @@ function addEvents(){
 	btnProducto.addEventListener("click", fillProducts);
 
 
-    
+    var btnEdit = document.getElementById("edit");
+	btnEdit.addEventListener("click", openEdit);
   
     getInfoUser();
 }
 addEvents();
+
+function openEdit(){
+    location.href = "EditarRegistro.html";
+}
+
 
 function fillProducts(){
      var products = [];
