@@ -39,7 +39,7 @@
       </div>
     </form>
   
- <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+ 
       
       <li><a href="#">	&#128276; Notificaciones</a></li>
        <li class="dropdown">
@@ -69,12 +69,12 @@
                           </div>
                             <hr>
                           <ul class="container details">
-                            <li><label  id="phone" class="glyphicon glyphicon-earphone one"></label></li>
+                            <li><label id="phone" class="glyphicon glyphicon-earphone one" ></label></li>
                             <li><label id="email" class="glyphicon glyphicon-envelope one"></label></li>
                             <li><label id="address" class="glyphicon glyphicon-map-marker one" ></label></li>
                             <div>
                                 <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">	&#127813;Productos</button>
+  <button id="botonProducto" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">	&#127813;Productos</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -87,14 +87,22 @@
           <h4 class="modal-title">Productos Registrados</h4>
         </div>
         <div class="modal-body">
-          <table id="tablaLista">
-
-  <tr>
-    <td> <input type="checkbox" name="comprar" value="ver"> </td>
-    <td>Papaya</td> 
-   
-  </tr>
+      	<div class="panel-body ">
+				  <table id="" class="table table-hover text-center">
+      <thead>
+        <tr class="active">
+          <th class="text-center">Producto</th>
+          <th  class="text-center">Calidad </th>
+          <th class="text-center">Precio</th>
+        </tr>
+      </thead>
+      <tbody id="tableProducts">
+        
+      </tbody>
     </table>
+				</div>
+
+      
      <a href="Product.html"><button type="button" class="btn btn-success">Registrar </button>    </a>  
     <button type="button" class="btn-danger">Eliminar Seleccionado</button>
     <br>

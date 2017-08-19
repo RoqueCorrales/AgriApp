@@ -11,7 +11,8 @@ addEvents();
 
 
 function registerProduct(){
- var idUserActive = localStorage.getItem('useractive');
+ var productos  = [];
+  var idUserActive = localStorage.getItem('useractive');
 
         var product = {
             idUser : idUserActive,
@@ -22,9 +23,20 @@ function registerProduct(){
          
           };
 
- localStorage.setItem('products', JSON.stringify(product));
+ if (localStorage.getItem('products')) {
+           productos = JSON.parse(localStorage.getItem('products'));
+        }
+        
+productos.push(product);
+
+ localStorage.setItem('products', JSON.stringify(productos));
 
 
+
+  
+
+location.href = "Perfil.html";
 }
+
 
 
