@@ -7,7 +7,7 @@ function addEvents(){
 
     
  	var buttonA = document.getElementById("actualizar");
-	buttonA.addEventListener("click", registerNewUser);
+	buttonA.addEventListener("click", updateUser);
 
 var buttonR= document.getElementById("regresar");
 	buttonR.addEventListener("click", regresar);
@@ -37,15 +37,15 @@ function confirmPassword(){
 
   
      users = JSON.parse(localStorage.getItem('users'));
-     var usuario;
+     var usuaro;
 for (var i = 0; i < users.length; i++) {
 			if(idUserActive==users[i].idUsuario){
-             usuario= users[i];
+             usuaro= users[i];
             }
         }
  var oldPass = document.getElementById("contrasennaantigua").value;
 	
-		if( oldPass == usuario.contrasena){
+		if( oldPass == usuaro.contrasena){
             document.getElementById("contrasennaantigua").hidden = true;
             document.getElementById('usuario').disabled = false;
          document.getElementById('contrasenna').disabled = false;
@@ -83,48 +83,35 @@ for (var i = 0; i < users.length; i++) {
 
 
 }
+function updateUser(){
+     var idUserActive = localStorage.getItem('useractive');
+     users = JSON.parse(localStorage.getItem('users'));
+if(document.getElementById('contrasenna').value==document.getElementById('ccontrasenna').value){
+     for (var i = 0; i < users.length; i++) {
+         if((idUserActive==users[i].idUsuario) && (document.getElementById('contrasenna').value == document.getElementById('ccontrasenna').value) && ){
+                 users[i].usuario = document.getElementById('usuario').value;
+                 users[i].contrasena =document.getElementById('contrasenna').value;
+                 users[i].telefono = document.getElementById('telefono').value;
+                 users[i].correo = document.getElementById('correo').value;
+                 users[i].direccion = document.getElementById('direccion').value;
+
+                 
 
 
-function registerNewUser(){
- var idUserActive = localStorage.getItem('useractive');
- users = JSON.parse(localStorage.getItem('users'));
-     var usuario;
-for (var i = 0; i < users.length; i++) {
-			if(idUserActive==users[i].idUsuario){
-             usuario= users[i];
-              users.splice(users[i],1);
-             localStorage.removeItem("users");
-            
+         }
+         localStorage.setItem('users', JSON.stringify(users));
+         alert("Actualizacion Completa");
+         location.href ="Perfil.html";
+
+     }
+}else{
+              alert("Error");
+         }
 
 
 
-            }
-        }
 
-      
-        localStorage.setItem('users', JSON.stringify(users));
-      
-
-      if(document.getElementById('contrasenna').value==document.getElementById('ccontrasenna').value){
-
-    
-               var user = {
-           idUsuario : idUserActive,
-            usuario: document.getElementById('usuario').value,
-         contrasena: document.getElementById('contrasenna').value,
-            telefono: document.getElementById('telefono').value,
-            correo: document.getElementById('correo').value,
-            direccion :document.getElementById('direccion').value,
-           
-               }
-          }else{
-              alert("Error password");
-              users.push(usuario);
-               localStorage.setItem('users', JSON.stringify(users));
-          }
-       
-
-
+     
 }
 
 function regresar(){
