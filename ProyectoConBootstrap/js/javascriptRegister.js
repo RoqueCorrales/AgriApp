@@ -31,7 +31,8 @@ REG.initializeEvents = function() {
           alert("Campos sin llenar.")
         }
         });
-      }  
+      }
+        
        
 };
  REG.initializeEvents();

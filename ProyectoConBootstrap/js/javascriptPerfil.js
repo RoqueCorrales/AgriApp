@@ -6,6 +6,9 @@ function addEvents(){
 	var btnProducto = document.getElementById("botonProducto");
 	btnProducto.addEventListener("click", fillProducts);
 
+    var btnBuscar = document.getElementById("btnBuscar");
+	btnBuscar.addEventListener("click", serch );
+
 
     var btnEdit = document.getElementById("edit");
 	btnEdit.addEventListener("click", openEdit);
@@ -49,6 +52,19 @@ var row = "<tr name=\"" + idUserActive + "\"></td><td>"+myProducts[i].name+ "</t
 
 
      
+
+}
+
+function serch(){
+     localStorage.removeItem("productoBuscado");
+if ( document.getElementById('producto').value==""){
+alert("No hay datos que buscar")
+
+}
+      else{
+            localStorage.setItem('productoBuscado',document.getElementById('producto').value);
+location.href = "BuscarProducto.html";
+      }  
 
 }
 

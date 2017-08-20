@@ -4,11 +4,21 @@
 function addEvents() {
 	var button = document.getElementById("addProduct");
 	button.addEventListener("click", registerProduct);
+
+
+
+
+  var btnReturn = document.getElementById("btnregresar");
+btnReturn.addEventListener("click", goBack)
 }
+
+
 
 addEvents();
 
-
+function goBack(){
+    location.href = "Perfil.html";
+}
 
 function registerProduct(){
  var productos  = [];

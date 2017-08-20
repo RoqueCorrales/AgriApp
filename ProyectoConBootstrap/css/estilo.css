@@ -155,8 +155,18 @@ footer p {
       margin-left:15%;
       width: 70%;
         background-color: #E0F8F1;
+      
+    
   }
-
+#fondoBloqueBusqueda{
+      text-align: center;
+      width: 30%;
+         border:outset;
+         background-color: transparent;
+        
+        margin-left: 35%;
+             
+  }
 
   #username{
       text-align: center; 
@@ -164,3 +174,9 @@ footer p {
   .h3Table{
       text-align: center;
   }
+
+  .leyenda{
+      color: white;
+    
+  }
+  
