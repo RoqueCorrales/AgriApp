@@ -1,3 +1,5 @@
+
+var productID;
 function addEvents(){
 	
 	var btnClose = document.getElementById("close");
@@ -14,6 +16,9 @@ function addEvents(){
 	btnEdit.addEventListener("click", openEdit);
   
     getInfoUser();
+
+    
+    
 }
 addEvents();
 
@@ -48,7 +53,7 @@ var row = "<tr name=\"" + idUserActive + "\"></td><td>"+myProducts[i].name+ "</t
         
 
 
-
+seleccion();
 
 
      
@@ -95,4 +100,58 @@ function getInfoUser(){
         }
     }
 
+}
+
+
+function seleccion() {
+    var table = document.getElementById("tableProducts");
+     var rows = table.getElementsByTagName("tr");
+    for (var i = 0; i < rows.length; i++) {
+        rows[i].onclick = (function() { 
+            return function() {
+               
+         
+           var name = this.cells[0].innerHTML;
+           var calidad= this.cells[1].innerHTML;
+           var  precio = this.cells[2].innerHTML;
+              
+              if (confirm("Esta seguro que quiere eliminar este producto?") == true) {
+   deleteProduct(name,calidad,precio);
+} else {
+    
+}
+            }    
+        })(i);
+    }
+}
+function deleteProduct(name,calidad,precio){
+     var productos  = JSON.parse(localStorage.getItem('products'));  
+      var idUserActive = localStorage.getItem('useractive');
+      var listaProductos=[];
+      
+     for (var i = 0; i < productos.length; i++) {
+         if((idUserActive==productos[i].idUser)&&(name ==productos[i].name) 
+         &&(calidad == productos[i].category)&&(precio==productos[i].price)){
+            
+alert("Eliminado exitoso.")
+    
+         }else{
+               listaProductos.push(productos[i]);
+         }
+
+
+
+        }
+         localStorage.setItem('products', JSON.stringify(listaProductos));
+         location.href ="Perfil.html";
+
+   
+
+
+
+
+     
+
+        
+      
 }

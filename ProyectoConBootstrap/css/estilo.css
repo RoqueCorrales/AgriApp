@@ -1,3 +1,8 @@
+
+
+
+/* Index */
+
 #body-index{
    background-size: cover; 
     background-color: #95a5a6 ; 
@@ -18,7 +23,7 @@
     font-size: 200%;
 
 }
-
+/* Buscar */
 #body-buscar{
      background-size: cover; 
     background-color: #95a5a6 ; 
@@ -36,6 +41,8 @@
     border:outset;
     text-align: center;
 }
+
+/* Conocenos*/
 #body-conocenos{
     background-size: cover; 
     background-color: #95a5a6 ; 
@@ -53,6 +60,8 @@
     background-color:#F2F2F2;
     border:outset;
 }
+
+/* Carosuel */
   .carousel-inner > .item > img,
  .carousel-inner > .item > img {
       width: 40%;
@@ -66,7 +75,7 @@
       width: 30%;
       height: 20%;
   }
- 
+ /* Calificacion Vendedor */
   .clasificacion{
 text-align: center;
 
@@ -78,7 +87,7 @@ text-align: center;
 #contenedor{
     border:outset;
      background-color: #E0F8F1;
-  
+     background-color: rgba(255,255,255,0.4);
      width: 40%;
 }
 .adCentrado{
@@ -88,6 +97,7 @@ text-align: center;
 .adIzq{
     text-align: left;
 }
+/* Registro Producto */
 #h3Producto{
     font-family: sans-serif;
     border: olive;
@@ -116,7 +126,7 @@ text-align: center;
     
 
 }
-    .details li {
+.details li {
       list-style: none;
     }
     li {
@@ -158,11 +168,13 @@ footer p {
       
     
   }
+  /* Buscar */
 #fondoBloqueBusqueda{
       text-align: center;
       width: 30%;
          border:outset;
-         background-color: transparent;
+               
+    background-color: rgba(255,255,255,0.4);
         
         margin-left: 35%;
              
@@ -170,13 +182,64 @@ footer p {
 
   #username{
       text-align: center; 
+      font-size: 300%;
+      color: rgba(0,0,0,1);
   }
   .h3Table{
       text-align: center;
   }
-
-  .leyenda{
-      color: white;
+#fondoRegister{
+      margin-left:15%;
+      width: 70%;
+           border:outset;
+    background-color: rgba(255,255,255,0.4);
+      
     
   }
   
+  #phone, #email, #address{
+       font-size: 150%;
+      color: rgba(0,0,0,1);
+    
+  }
+
+
+
+
+
+/*Login*/
+  .leyenda{
+    color: rgba(0,0,0,0.6);
+      font-size:300%;    
+  }
+  #contenedorLogin{
+       text-align: center;
+      width: 30%;
+         border:outset;
+    
+        
+        margin-left: 35%;
+        background-color: rgba(255,255,255,0.8);
+  }
+
+  
+  /*Perfil*/
+
+  .jumbotron{
+      background-color: rgba(255,255,255,0.8);
+      
+  }
+  #bodyPerfil{
+     background-size: cover; 
+    background-color: #95a5a6 ; 
+     background-image: url("Imagenes/6.jpg");
+         
+           background-size: 100% 100%;
+          background-attachment: fixed;
+          
+       
+}
+#botonCalificar, #botonProducto{
+    background-color:  rgba(0,0,0,1);
+    border-color: rgba(0,0,0,1);
+}
