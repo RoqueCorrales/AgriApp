@@ -60,7 +60,7 @@ localStorage.setItem('selectedProduct', JSON.stringify(frutaSeleccionada));
 
 
 
-
+location.href=("ContactoVendedor.html");
 
 }
 
