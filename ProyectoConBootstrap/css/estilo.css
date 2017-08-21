@@ -70,6 +70,7 @@
   }
   #inicio{
       color: #CEECF5;
+      text-align: center;
   }
   #im{
       width: 30%;
@@ -162,21 +163,22 @@ footer p {
      text-align: center;
   }
   #fondoBloque{
-      margin-left:15%;
-      width: 70%;
-        background-color: #E0F8F1;
+      text-align: center;
       
+      
+               
+    background-color: rgba(255,255,255,0.4);
     
   }
   /* Buscar */
 #fondoBloqueBusqueda{
       text-align: center;
-      width: 30%;
-         border:outset;
+      
+      
                
     background-color: rgba(255,255,255,0.4);
         
-        margin-left: 35%;
+        
              
   }
 
@@ -190,8 +192,8 @@ footer p {
   }
 #fondoRegister{
       margin-left:15%;
-      width: 70%;
-           border:outset;
+      width: 75%;
+    
     background-color: rgba(255,255,255,0.4);
       
     
@@ -213,13 +215,11 @@ footer p {
       font-size:300%;    
   }
   #contenedorLogin{
-       text-align: center;
-      width: 30%;
-         border:outset;
-    
-        
-        margin-left: 35%;
-        background-color: rgba(255,255,255,0.8);
+      margin-left:15%;
+      width: 75%;
+          
+    background-color: rgba(255,255,255,0.4);
+      
   }
 
   
