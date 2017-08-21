@@ -19,7 +19,7 @@ function verification() {
 			if (userName == element.usuario) {
 				if (pass == element.contrasena) {
 
-localStorage.setItem('useractive', users[i].idUsuario);
+sessionStorage.setItem('useractive', users[i].idUsuario);
 
 					location.href = "Perfil.html";
 					break;

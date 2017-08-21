@@ -86,12 +86,6 @@ var row = "<tr name=\"" + productoSeleccionado.productor + "\"></td><td>"+produc
    
 
 
-        
-
-
-
-
-     
 
 }
 
@@ -120,7 +114,7 @@ for (var i = 0; i< usuarios.length; i++){
 
 function hideB(){
 
-var idUserActive = localStorage.getItem('useractive');
+var idUserActive = sessionStorage.getItem('useractive');
     if(idUserActive==null){
       document.getElementById("btnregresar").style.display = 'none';
     }else{

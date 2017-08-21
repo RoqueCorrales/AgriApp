@@ -22,7 +22,7 @@ function goBack(){
 
 function registerProduct(){
  var productos  = [];
-  var idUserActive = localStorage.getItem('useractive');
+  var idUserActive = sessionStorage.getItem('useractive');
 
         var product = {
             idUser : idUserActive,

@@ -30,7 +30,7 @@ function openEdit(){
 function fillProducts(){
      var products = [];
        products = JSON.parse(localStorage.getItem('products'));
-     var idUserActive = localStorage.getItem('useractive');
+     var idUserActive = sessionStorage.getItem('useractive');
 var myProducts =[];
 
 for (var i = 0; i < products.length; i++) {
@@ -78,13 +78,13 @@ location.href = "BuscarProducto.html";
 
 
 function closeSession(){
-	localStorage.removeItem("useractive");
+	sessionStorage.removeItem("useractive");
 	location.href = "index.html";
 }
 
 function getInfoUser(){
     var users = JSON.parse(localStorage.getItem('users'));
-    var idUserActive = localStorage.getItem('useractive');
+    var idUserActive = sessionStorage.getItem('useractive');
 
 	for (var i = 0; i < users.length; i++) {
         if(users[i].idUsuario== idUserActive){
@@ -126,7 +126,7 @@ function seleccion() {
 }
 function deleteProduct(name,calidad,precio){
      var productos  = JSON.parse(localStorage.getItem('products'));  
-      var idUserActive = localStorage.getItem('useractive');
+      var idUserActive = sessionStorage.getItem('useractive');
       var listaProductos=[];
       
      for (var i = 0; i < productos.length; i++) {

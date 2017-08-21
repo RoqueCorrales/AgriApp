@@ -16,7 +16,7 @@ var buttonR= document.getElementById("regresar");
 addEvents();
 
 function  disableFields(){
-      var idUserActive = localStorage.getItem('useractive');
+      var idUserActive = sessionStorage.getItem('useractive');
 
     document.getElementById("idUsuario").innerHTML = idUserActive;
       document.getElementById('usuario').disabled = true;
@@ -33,7 +33,7 @@ function  disableFields(){
 function confirmPassword(){
    
 
-    var idUserActive = localStorage.getItem('useractive');
+    var idUserActive = sessionStorage.getItem('useractive');
 
   
      users = JSON.parse(localStorage.getItem('users'));
@@ -67,7 +67,7 @@ fillFields();
 
 
 function fillFields(){
-    var idUserActive = localStorage.getItem('useractive');
+    var idUserActive = sessionStorage.getItem('useractive');
      users = JSON.parse(localStorage.getItem('users'));
 
 for (var i = 0; i < users.length; i++) {
@@ -84,7 +84,7 @@ for (var i = 0; i < users.length; i++) {
 
 }
 function updateUser(){
-     var idUserActive = localStorage.getItem('useractive');
+     var idUserActive = sessionStorage.getItem('useractive');
      users = JSON.parse(localStorage.getItem('users'));
 if(document.getElementById('contrasenna').value==document.getElementById('ccontrasenna').value ){
      for (var i = 0; i < users.length; i++) {

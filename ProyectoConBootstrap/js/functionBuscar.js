@@ -51,16 +51,19 @@ var frutaSeleccionada ={
 
 }
 localStorage.setItem('selectedProduct', JSON.stringify(frutaSeleccionada));
+   location.href=("contacto.html");
  }
 
               
             }    
         })(i);
+
+     
     }
 
 
 
-location.href=("ContactoVendedor.html");
+
 
 }
 
