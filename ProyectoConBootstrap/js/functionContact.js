@@ -29,7 +29,7 @@ function fillProducts(){
    
        var products = [];
        products = JSON.parse(localStorage.getItem('products'));
-  var productoSeleccionado = JSON.parse(localStorage.getItem('selectedProduct'));
+  var productoSeleccionado = JSON.parse(sessionStorage.getItem('selectedProduct'));
   productoor= productoSeleccionado.productor;
   var idProductor;
 
@@ -75,7 +75,7 @@ var row = "<tr name=\"" + myProducts[i].name + "\"></td><td>"+myProducts[i].name
 function fillProductsPrincipal(){
    
       
-  var productoSeleccionado = JSON.parse(localStorage.getItem('selectedProduct'));
+  var productoSeleccionado = JSON.parse(sessionStorage.getItem('selectedProduct'));
   
 
 var table = document.getElementById("tableProducts");
@@ -91,7 +91,7 @@ var row = "<tr name=\"" + productoSeleccionado.productor + "\"></td><td>"+produc
 
 
 function fillDataUser(){
-    var productoSeleccionado = JSON.parse(localStorage.getItem('selectedProduct'));
+    var productoSeleccionado = JSON.parse(sessionStorage.getItem('selectedProduct'));
   productoor= productoSeleccionado.productor;
 
 var usuarios = JSON.parse(localStorage.getItem('users'));

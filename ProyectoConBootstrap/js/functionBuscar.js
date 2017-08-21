@@ -12,7 +12,7 @@ addEvents();
 
 
 function hideButton(){
-    var idUserActive = localStorage.getItem('useractive');
+    var idUserActive = sessionStorage.getItem('useractive');
     if(idUserActive==null){
       document.getElementById("btnregresar").style.display = 'none';
     }else{
@@ -50,7 +50,7 @@ var frutaSeleccionada ={
     precio:this.cells[3].innerHTML,
 
 }
-localStorage.setItem('selectedProduct', JSON.stringify(frutaSeleccionada));
+sessionStorage.setItem('selectedProduct', JSON.stringify(frutaSeleccionada));
    location.href=("contacto.html");
  }
 
@@ -70,7 +70,7 @@ localStorage.setItem('selectedProduct', JSON.stringify(frutaSeleccionada));
 function fillProducts(){
      var products = [];
        products = JSON.parse(localStorage.getItem('products'));
-      var producto = localStorage.getItem('productoBuscado');
+      var producto = sessionStorage.getItem('productoBuscado');
 var myProducts =[];
 
 for (var i = 0; i < products.length; i++) {

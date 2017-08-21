@@ -11,13 +11,13 @@ addEvents();
 
 function addBuscar(){
 
- localStorage.removeItem("productoBuscado");
+ sessionStorage.removeItem("productoBuscado");
 if ( document.getElementById('producto').value==""){
 alert("No hay datos que buscar")
 
 }
       else{
-            localStorage.setItem('productoBuscado',document.getElementById('producto').value);
+            sessionStorage.setItem('productoBuscado',document.getElementById('producto').value);
 location.href = "BuscarProducto.html";
       }  
 
