@@ -41,7 +41,7 @@ function selectedRow() {
 
  if (confirm("Esta seguro que deseas contactar al vendedor?") == true){
             var id = document.getElementsByTagName("tr");
-alert(this.cells[0].innerHTML+" "+this.cells[1].innerHTML+" "+this.cells[2].innerHTML);
+
 
 var frutaSeleccionada ={
     productor : this.cells[0].innerHTML,

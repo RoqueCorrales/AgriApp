@@ -2,6 +2,8 @@
 function addEvents(){
 	
 
+var btnReturn = document.getElementById("btnReturn");
+	btnReturn.addEventListener("click", goBack);
 
 	var btnProducto = document.getElementById("botonProducto");
 	btnProducto.addEventListener("click", fillProducts);
