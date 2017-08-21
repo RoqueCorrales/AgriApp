@@ -16,6 +16,8 @@ REG.initializeEvents = function() {
             telefono: document.getElementById('telefono').value,
             correo: document.getElementById('correo').value,
             direccion :document.getElementById('direccion').value,
+            meGusta : 0,
+            noMeGusta:0,
            // foto =fileInput,
 
           };

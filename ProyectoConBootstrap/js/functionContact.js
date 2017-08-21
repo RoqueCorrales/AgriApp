@@ -13,8 +13,17 @@ function addEvents(){
     	var btnConocenos = document.getElementById("btnconocenos");
 	btnConocenos.addEventListener("click", goConocenos);
 
-    	var btnRegresar = document.getElementById("btnregresar");
-	btnRegresar.addEventListener("click", goBack);
+    	var btnLike = document.getElementById("megusta");
+	btnLike.addEventListener("click", like);
+
+
+    	var btnDislike = document.getElementById("nomegusta");
+	btnDislike.addEventListener("click", dislike);
+
+    var btnCalificar= document.getElementById("botonCalificar");
+	btnCalificar.addEventListener("click", calificar);
+
+    
   
  fillProductsPrincipal();
  fillDataUser();
@@ -135,4 +144,86 @@ function goIndex(){
 function goConocenos(){
     location.href = "Conocenos.html";
 }
+
+
+function like(){
+    
+        var productoSeleccionado = JSON.parse(sessionStorage.getItem('selectedProduct'));
+  productoor= productoSeleccionado.productor;
+
+var usuarios = JSON.parse(localStorage.getItem('users'));
+
+for (var i = 0; i< usuarios.length; i++){
+    if(productoor==usuarios[i].usuario){
+       
+
+             usuarios[i].meGusta = usuarios[i].meGusta +1;
+             document.getElementById("megusta").style.display = 'none';
+             document.getElementById("nomegusta").style.display = 'none';
+
+            
+
+    }
+
+}
+    localStorage.setItem('users', JSON.stringify(usuarios));
+         alert("Gracias por calificar a nuestro vendedor");
+
+}
+function dislike(){
+   var productoSeleccionado = JSON.parse(sessionStorage.getItem('selectedProduct'));
+  productoor= productoSeleccionado.productor;
+
+var usuarios = JSON.parse(localStorage.getItem('users'));
+
+for (var i = 0; i< usuarios.length; i++){
+    if(productoor==usuarios[i].usuario){
+       
+
+             usuarios[i].noMeGusta = usuarios[i].noMeGusta +1;
+              document.getElementById("nomegusta").style.display = 'none';
+              document.getElementById("megusta").style.display = 'none';
+
+            
+
+    }
+
+}
+    localStorage.setItem('users', JSON.stringify(usuarios));
+         alert("Gracias por calificar a nuestro vendedor");
+
+}
+
+
+function calificar(){
+
+  var productoSeleccionado = JSON.parse(sessionStorage.getItem('selectedProduct'));
+  productoor= productoSeleccionado.productor;
+
+var usuarios = JSON.parse(localStorage.getItem('users'));
+
+for (var i = 0; i< usuarios.length; i++){
+    if(productoor==usuarios[i].usuario){
+       
+
+             usuarios[i].meNoGusta = usuarios[i].meNoGusta +1;
+            
+
+            
+
+
+var table = document.getElementById("tableCalificacion");
+	table.innerHTML = null; 
+
+var row = "<tr name=\"" +productoor + "\"></td><td>"+usuarios[i].meGusta+ 
+"</td><td>"+usuarios[i].noMeGusta+ "</td></tr>";
+			table.innerHTML = table.innerHTML + row;
+   
+
+
+
+}
+}
+}
+
 

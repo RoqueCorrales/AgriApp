@@ -14,6 +14,9 @@ function addEvents(){
 
     var btnEdit = document.getElementById("edit");
 	btnEdit.addEventListener("click", openEdit);
+
+    var btnCalificar= document.getElementById("botonCalificar");
+	btnCalificar.addEventListener("click", calificar);
   
     getInfoUser();
 
@@ -154,4 +157,32 @@ alert("Eliminado exitoso.")
 
         
       
+}
+
+
+
+function calificar(){
+
+  var idUserActive = sessionStorage.getItem('useractive');
+
+var usuarios = JSON.parse(localStorage.getItem('users'));
+
+for (var i = 0; i< usuarios.length; i++){
+    if(idUserActive==usuarios[i].idUsuario){
+       
+            
+
+
+var table = document.getElementById("tableCalificacion");
+	table.innerHTML = null; 
+
+var row = "<tr name=\"" +idUserActive + "\"></td><td>"+usuarios[i].meGusta+ 
+"</td><td>"+usuarios[i].noMeGusta+ "</td></tr>";
+			table.innerHTML = table.innerHTML + row;
+   
+
+
+
+}
+}
 }

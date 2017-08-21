@@ -84,8 +84,8 @@
                           <img src="https://www.svgimages.com/svg-image/s5/man-passportsize-silhouette-icon-256x256.png" alt="stack photo" class="img">
                           <br>
                           <br>
-                          <a class="btn icon-btn btn-primary" href="#"><span class="glyphicon btn-glyphicon glyphicon-thumbs-up img-circle text-primary"></span>Me gusta</a>
-                          <a class="btn icon-btn btn-danger" href="#"><span class="glyphicon btn-glyphicon glyphicon-thumbs-down img-circle text-danger"></span>No me gusta</a>
+                          <a id="megusta"class="btn icon-btn btn-primary" href="#"><span class="glyphicon btn-glyphicon glyphicon-thumbs-up img-circle text-primary"></span>Me gusta</a>
+                          <a id="nomegusta"class="btn icon-btn btn-danger" href="#"><span class="glyphicon btn-glyphicon glyphicon-thumbs-down img-circle text-danger"></span>No me gusta</a>
                           
                       </div>
                       <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
@@ -163,12 +163,25 @@
           <h4 class="modal-title">Calificacion</h4>
         </div>
         <div class="modal-body">
-           <div class="progress">
-  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
-  aria-valuemin="0" aria-valuemax="100" style="width:40%">
-    40% Complete (success)
-  </div>
-</div>
+	<div class="panel-body table-responsive">
+				  <table id="" class="table table-hover text-center">
+      <thead>
+        <tr class="active">
+        
+          <th class="text-center"><span class="glyphicon btn-glyphicon glyphicon-thumbs-up img-circle text-primary"></span></th>
+          <th  class="text-center"><span class="glyphicon btn-glyphicon glyphicon-thumbs-down img-circle text-danger"></span> </th>
+         
+        </tr>
+      </thead>
+      <tbody id="tableCalificacion">
+        
+      </tbody>
+    </table>
+				</div>
+
+
+
+           
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
