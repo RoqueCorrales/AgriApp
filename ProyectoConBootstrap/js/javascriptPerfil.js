@@ -75,7 +75,7 @@ function serch() {
         alert("No hay datos que buscar")
 
     } else {
-        sessionStorage.setItem('productoBuscado', document.getElementById('producto').value);
+        sessionStorage.setItem('productoBuscado', document.getElementById('producto').value.toLowerCase());
         location.href = "BuscarProducto.html";
     }
 
