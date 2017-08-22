@@ -1,174 +1,178 @@
-
-
-
 /* Index */
 
-#body-index{
-   background-size: cover; 
-    background-color: #95a5a6 ; 
-     background-image: url("Imagenes/cambio.jpg");
-         
-          background-size: 100% 100%;
-          background-attachment: fixed;
-  
-  
+#body-index {
+    background-size: cover;
+    background-color: #95a5a6;
+    background-image: url("Imagenes/cambio.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
-#buscador-index{
-   
+
+#buscador-index {
     transform: translateY(605%);
-    
 }
-#logo{
+
+#logo {
     color: white;
     font-size: 200%;
-
 }
+
+
 /* Buscar */
-#body-buscar{
-     background-size: cover; 
-    background-color: #95a5a6 ; 
-     background-image: url("Imagenes/6.jpg");
-         
-                background-size: 100% 100%;
-          background-attachment: fixed;
-}
-#table{
-    background-color:beige;
+
+#body-buscar {
+    background-size: cover;
+    background-color: #95a5a6;
+    background-image: url("Imagenes/6.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
-#titleb{
+#table {
+    background-color: beige;
+}
+
+#titleb {
     background-color: #E0F8F1;
-    border:outset;
+    border: outset;
     text-align: center;
 }
+
 
 /* Conocenos*/
-#body-conocenos{
-    background-size: cover; 
-    background-color: #95a5a6 ; 
-     background-image: url("Imagenes/2.jpg");
-         
-                background-size: 100% 100%;
-          background-attachment: fixed;
+
+#body-conocenos {
+    background-size: cover;
+    background-color: #95a5a6;
+    background-image: url("Imagenes/2.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
-#mision{
-   background-color: rgba(255,255,255,0.8);
-   border:outset;
+#mision {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: outset;
 }
-#vision{
-   background-color: rgba(255,255,255,0.8);
-    border:outset;
+
+#vision {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: outset;
 }
+
 
 /* Carosuel */
-  .carousel-inner > .item > img,
- .carousel-inner > .item > img {
-      width: 40%;
-      height: 20%;
-      margin: auto;
-  }
-  #inicio{
-      color: #CEECF5;
-      text-align: center;
-  }
-  #im{
-      width: 30%;
-      height: 20%;
-  }
- /* Calificacion Vendedor */
-  .clasificacion{
-text-align: center;
 
-  }
-#form{
-    text-align: center;
-    
+.carousel-inner>.item>img,
+.carousel-inner>.item>img {
+    width: 40%;
+    height: 20%;
+    margin: auto;
 }
-#contenedor{
-  
-     background-color: #E0F8F1;
-     background-color: rgba(255,255,255,0.4);
 
-}
-.adCentrado{
+#inicio {
+    color: #CEECF5;
     text-align: center;
-   
 }
-.adIzq{
+
+#im {
+    width: 30%;
+    height: 20%;
+}
+
+
+/* Calificacion Vendedor */
+
+.clasificacion {
+    text-align: center;
+}
+
+#form {
+    text-align: center;
+}
+
+#contenedor {
+    background-color: #E0F8F1;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.adCentrado {
+    text-align: center;
+}
+
+.adIzq {
     text-align: left;
 }
+
+
 /* Registro Producto */
-#body-registar{
-     background-size: cover; 
-    background-color: #95a5a6 ; 
-     background-image: url("Imagenes/00.jpg");
-         
-           background-size: 100% 100%;
-          background-attachment: fixed;
-          
-       
+
+#body-registar {
+    background-size: cover;
+    background-color: #95a5a6;
+    background-image: url("Imagenes/00.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
+
 
 /* Mensajes */
-#body-mensajes{
-     background-size: cover; 
-    background-color: #95a5a6 ; 
-     background-image: url("Imagenes/000.jpg");
-         
-           background-size: 100% 100%;
-          background-attachment: fixed;
-          
-       
+
+#body-mensajes {
+    background-size: cover;
+    background-color: #95a5a6;
+    background-image: url("Imagenes/000.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
-
-#h3Producto{
+#h3Producto {
     font-family: sans-serif;
     border: olive;
     border: outset;
 }
-#Register{
+
+#Register {
     width: 30%;
     border: outset;
     background-color: #E0F8F1;
     text-align: center;
-
 }
-#contenedorProductos{
-     border: outset;
+
+#contenedorProductos {
+    border: outset;
     background-color: #E0F8F1;
-width: 50%;
-text-align: center;
-
-
+    width: 50%;
+    text-align: center;
 }
-#contenedorBuscas{
-   border: outset;
+
+#contenedorBuscas {
+    border: outset;
     background-color: #E0F8F1;
-width: 50%;
-text-align: center;
-    
-
+    width: 50%;
+    text-align: center;
 }
+
 .details li {
-      list-style: none;
-    }
-    li {
-        margin-bottom:10px;
-        
-    }
-    #profile{
-        border-bottom:1px solid black
-    }
-    #details{
-        width:5%;
-    }
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#profile {
+    border-bottom: 1px solid black
+}
+
+#details {
+    width: 5%;
+}
+
 
 /* Footer */
 
-footer{
-   background-color: #2E2E2E;
+footer {
+    background-color: #2E2E2E;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -183,135 +187,151 @@ footer p {
     margin: 0px;
     line-height: 100%;
 }
- .bloque{
-     text-align: center;
-  }
-  #fondoBloque{
-      text-align: center;
-      
-      
-               
-    background-color: rgba(255,255,255,0.4);
-    
-  }
-  /* Buscar */
-#fondoBloqueBusqueda{
-      text-align: center;
-      
-      
-               
-    background-color: rgba(255,255,255,0.4);
-        
-        
-             
-  }
 
-  #username{
-      text-align: center; 
-      font-size: 300%;
-      color: rgba(0,0,0,1);
-  }
-  .h3Table{
-      text-align: center;
-  }
-#fondoRegister{
-      margin-left:15%;
-      width: 75%;
-    
-    background-color: rgba(255,255,255,0.4);
-      
-    
-  }
-  
-  #phone, #email, #address{
-       font-size: 150%;
-      color: rgba(0,0,0,1);
-    
-  }
+.bloque {
+    text-align: center;
+}
+
+#fondoBloque {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* Buscar */
+
+#fondoBloqueBusqueda {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#username {
+    text-align: center;
+    font-size: 300%;
+    color: rgba(0, 0, 0, 1);
+}
+
+.h3Table {
+    text-align: center;
+}
+
+#fondoRegister {
+    margin-left: 15%;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#phone,
+#email,
+#address {
+    font-size: 150%;
+    color: rgba(0, 0, 0, 1);
+}
 
 
 /* Registro Productor */
-#body-register{
-     background-size: cover; 
-    background-color: #95a5a6 ; 
-     background-image: url("Imagenes/0000.jpg");
-         
-           background-size: 100% 100%;
-          background-attachment: fixed;
-          
-       
-}
 
+#body-register {
+    background-size: cover;
+    background-color: #95a5a6;
+    background-image: url("Imagenes/0000.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
 
 
 /*Login*/
-  .leyenda{
-    color: rgba(0,0,0,0.6);
-      font-size:300%;    
-  }
-  #contenedorLogin{
-      margin-left:15%;
-      width: 75%;
-          
-    background-color: rgba(255,255,255,0.4);
-      
-  }
 
-  
-
-#body-login{
-     background-size: cover; 
-    background-color: #95a5a6 ; 
-     background-image: url("Imagenes/0001.jpg");
-         
-           background-size: 100% 100%;
-          background-attachment: fixed;
-          
-       
+.leyenda {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 300%;
 }
 
-  
-  /*Perfil*/
+#contenedorLogin {
+    margin-left: 15%;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.4);
+}
 
-  .jumbotron{
-      background-color: rgba(255,255,255,0.8);
-      
-  }
-  #bodyPerfil{
-     background-size: cover; 
-    background-color: #95a5a6 ; 
-     background-image: url("Imagenes/fondo.jpg");
-         
-           background-size: 100% 100%;
-          background-attachment: fixed;
-          
-       
+#body-login {
+    background-size: cover;
+    background-color: #95a5a6;
+    background-image: url("Imagenes/0001.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
-#botonCalificar, #botonProducto{
-    background-color:  rgba(0,0,0,1);
-    border-color: rgba(0,0,0,1);
+
+
+/* buscar-Producto */
+
+#body-buscar-producto {
+    background-size: cover;
+    background-color: #95a5a6;
+    background-image: url("Imagenes/12.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
+
+
+/* buscar-Producto */
+
+#body-contacto {
+    background-size: cover;
+    background-color: #95a5a6;
+    background-image: url("Imagenes/22.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+/*Perfil*/
+
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#bodyPerfil {
+    background-size: cover;
+    background-color: #95a5a6;
+    background-image: url("Imagenes/fondo.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#botonCalificar,
+#botonProducto {
+    background-color: rgba(0, 0, 0, 1);
+    border-color: rgba(0, 0, 0, 1);
+}
+
 
 /*******************************************************************/
-.btn-glyphicon { padding:8px; background:#ffffff; margin-right:4px; }
-.icon-btn { padding: 1px 15px 3px 2px; border-radius:50px;}
+
+.btn-glyphicon {
+    padding: 8px;
+    background: #ffffff;
+    margin-right: 4px;
+}
+
+.icon-btn {
+    padding: 1px 15px 3px 2px;
+    border-radius: 50px;
+}
 
 
 /*********************************/
-.counted{
-  
-   margin-bottom:2%;
+
+.counted {
+    margin-bottom: 2%;
 }
+
 
 /***Editar***/
 
-#body-editar{
-     background-size: cover; 
-    background-color: #95a5a6 ; 
-     background-image: url("Imagenes/01.jpg");
-         
-           background-size: 100% 100%;
-          background-attachment: fixed;
-          
-       
+#body-editar {
+    background-size: cover;
+    background-color: #95a5a6;
+    background-image: url("Imagenes/01.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
