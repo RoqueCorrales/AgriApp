@@ -2,9 +2,9 @@ function addEvents(){
 
 var btnReturn = document.getElementById("btnregresar");
 btnReturn.addEventListener("click", goBack)
-
-fillProducts();
 hideButton();
+fillProducts();
+
 
 
 }
@@ -73,6 +73,12 @@ function fillProducts(){
       var producto = sessionStorage.getItem('productoBuscado');
 var myProducts =[];
 
+if(products==null){
+    alert("No se encontraron productos");
+    location.href ="index.html";
+}else{
+
+
 for (var i = 0; i < products.length; i++) {
 
     if(products[i].name == producto){
@@ -100,5 +106,5 @@ var row = "<tr name=\"" + myProducts[i].idUser + "\"><td>"+name+ "</td><td>"+myP
 selectedRow();
 }
   
-
+}
   

@@ -25,6 +25,8 @@ var btnReturn = document.getElementById("btnReturn");
     var btnCalificar= document.getElementById("botonCalificar");
 	btnCalificar.addEventListener("click", calificar);
 
+    var btnEnviar= document.getElementById("btnEnviar");
+	btnEnviar.addEventListener("click", enviarMensaje);
     
   
  fillProductsPrincipal();
@@ -127,7 +129,7 @@ function hideB(){
 
 var idUserActive = sessionStorage.getItem('useractive');
     if(idUserActive==null){
-      document.getElementById("btnregresar").style.display = 'none';
+      document.getElementById("btnReturn").style.display = 'none';
     }else{
 document.getElementById("btninicio").style.display = 'none';
     document.getElementById("btnconocenos").style.display = 'none';
@@ -229,3 +231,44 @@ var row = "<tr name=\"" +productoor + "\"></td><td>"+usuarios[i].meGusta+
 }
 
 
+function enviarMensaje(){
+var mensajes=[];
+var data = document.getElementById("txtMensaje").value;
+if(data ==""){
+    alert("Escribe mensaje ");
+}else{
+
+
+var idPro;
+  var productoSeleccionado = JSON.parse(sessionStorage.getItem('selectedProduct'));
+  productoor= productoSeleccionado.productor;
+
+var usuarios = JSON.parse(localStorage.getItem('users'));
+
+for (var i = 0; i< usuarios.length; i++){
+    if(productoor==usuarios[i].usuario){
+idPro = usuarios[i].idUsuario;
+    }
+
+
+
+}
+mensaje ={
+ texto : data,
+ idUsuario : idPro,
+}
+
+
+ if (localStorage.getItem('mensajes')) {
+          mensajes = JSON.parse(localStorage.getItem('mensajes'));
+        }
+        
+mensajes.push(mensaje);
+
+ localStorage.setItem('mensajes', JSON.stringify(mensajes));
+ alert("Mensaje enviado con exito.")
+  document.getElementById("txtMensaje").value ="";
+
+}
+
+}

@@ -10,12 +10,17 @@ addEvents();
 
 
 function addBuscar(){
-
- sessionStorage.removeItem("productoBuscado");
-if ( document.getElementById('producto').value==""){
-alert("No hay datos que buscar")
-
+      var products = [];
+       products = JSON.parse(localStorage.getItem('products'));
+      var producto = sessionStorage.getItem('productoBuscado');
+var myProducts =[];
+sessionStorage.removeItem("productoBuscado");
+if(products==null || document.getElementById('producto').value==""){
+    alert("No se encontraron datos");
+    document.getElementById('producto').value="";
 }
+
+
       else{
             sessionStorage.setItem('productoBuscado',document.getElementById('producto').value);
 location.href = "BuscarProducto.html";

@@ -90,6 +90,61 @@
           <br>
           <a id="megusta" class="btn icon-btn btn-primary" href="#"><span class="glyphicon btn-glyphicon glyphicon-thumbs-up img-circle text-primary"></span>Me gusta</a>
           <a id="nomegusta" class="btn icon-btn btn-danger" href="#"><span class="glyphicon btn-glyphicon glyphicon-thumbs-down img-circle text-danger"></span>No me gusta</a>
+         <br>
+         <br>
+          <!-- Trigger the modal with a button -->
+          <button id="botonCalificar" type="button" class="btn icon-btn btn-info " data-toggle="modal" data-target="#myModall">
+            <span class="glyphicon btn-glyphicon glyphicon glyphicon-pencil img-circle text-primary"></span>Mensaje
+            
+
+  </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModall" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Mensaje</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12">
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <form accept-charset="UTF-8" action="" method="POST">
+                              <input type="text" id="txtMensaje" class="form-control counted" name="message" placeholder="Escribir Mensaje"></input>
+
+                              <button id="btnEnviar"class="btn btn-info" type="button">Enviar Mensaje</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+
+
 
         </div>
         <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
@@ -194,6 +249,9 @@
 
               </div>
             </div>
+
+
+      
 
         </div>
 

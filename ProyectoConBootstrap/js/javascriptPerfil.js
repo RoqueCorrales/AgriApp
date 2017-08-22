@@ -5,6 +5,9 @@ function addEvents(){
 	var btnClose = document.getElementById("close");
 	btnClose.addEventListener("click", closeSession);
 
+    	var btnNotification = document.getElementById("btnNotification");
+	btnNotification.addEventListener("click", notification);
+
 	var btnProducto = document.getElementById("botonProducto");
 	btnProducto.addEventListener("click", fillProducts);
 
@@ -29,7 +32,9 @@ function openEdit(){
     location.href = "EditarRegistro.html";
 }
 
-
+function notification(){
+    location.href="Reputacion.html"
+}
 function fillProducts(){
      var products = [];
        products = JSON.parse(localStorage.getItem('products'));
