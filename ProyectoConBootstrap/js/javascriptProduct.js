@@ -20,6 +20,10 @@ function goBack() {
 function registerProduct() {
   var productos = [];
   var idUserActive = sessionStorage.getItem('useractive');
+if((document.getElementById('nombre').value == "" )||(document.getElementById('nombre').value == null )){
+alert("Producto incompleto")
+}else{
+
 
   var product = {
     idUser: idUserActive,
@@ -43,4 +47,5 @@ function registerProduct() {
 
 
   location.href = "Perfil.html";
+}
 }

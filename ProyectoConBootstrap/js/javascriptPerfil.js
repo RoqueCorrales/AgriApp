@@ -54,7 +54,8 @@ function fillProducts() {
     var table = document.getElementById("tableProducts");
     table.innerHTML = null;
     for (var i = 0; i < myProducts.length; i++) {
-        var row = "<tr name=\"" + idUserActive + "\"></td><td>" + myProducts[i].name + "</td><td>" + myProducts[i].category + "</td><td>" + myProducts[i].price + "</td></tr>";
+        var row = "<tr name=\"" + idUserActive + "\"></td><td>" + myProducts[i].name + "</td><td>" + myProducts[i].category +
+         "</td><td>" + myProducts[i].price + "</td><td>" + myProducts[i].description + "</td></tr>";
         table.innerHTML = table.innerHTML + row;
 
 

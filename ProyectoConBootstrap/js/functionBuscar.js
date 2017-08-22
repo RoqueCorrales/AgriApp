@@ -98,7 +98,8 @@ function fillProducts() {
                     name = usuarios[c].usuario;
                 }
             }
-            var row = "<tr name=\"" + myProducts[i].idUser + "\"><td>" + name + "</td><td>" + myProducts[i].name + "</td><td>" + myProducts[i].category + "</td><td>" + myProducts[i].price + "</td></tr>";
+            var row = "<tr name=\"" + myProducts[i].idUser + "\"><td>" + name + "</td><td>" + myProducts[i].name +
+             "</td><td>" + myProducts[i].category + "</td><td>" + myProducts[i].price + "</td><td>" + myProducts[i].description + "</td></tr>";
             table.innerHTML = table.innerHTML + row;
 
 
