@@ -22,7 +22,7 @@ if(products==null || document.getElementById('producto').value==""){
 
 
       else{
-            sessionStorage.setItem('productoBuscado',document.getElementById('producto').value);
+            sessionStorage.setItem('productoBuscado',document.getElementById('producto').value.toLowerCase());
 location.href = "BuscarProducto.html";
       }  
 

@@ -99,6 +99,30 @@ text-align: center;
     text-align: left;
 }
 /* Registro Producto */
+#body-registar{
+     background-size: cover; 
+    background-color: #95a5a6 ; 
+     background-image: url("Imagenes/00.jpg");
+         
+           background-size: 100% 100%;
+          background-attachment: fixed;
+          
+       
+}
+
+/* Mensajes */
+#body-mensajes{
+     background-size: cover; 
+    background-color: #95a5a6 ; 
+     background-image: url("Imagenes/000.jpg");
+         
+           background-size: 100% 100%;
+          background-attachment: fixed;
+          
+       
+}
+
+
 #h3Producto{
     font-family: sans-serif;
     border: olive;
@@ -206,6 +230,17 @@ footer p {
   }
 
 
+/* Registro Productor */
+#body-register{
+     background-size: cover; 
+    background-color: #95a5a6 ; 
+     background-image: url("Imagenes/0000.jpg");
+         
+           background-size: 100% 100%;
+          background-attachment: fixed;
+          
+       
+}
 
 
 
@@ -223,6 +258,19 @@ footer p {
   }
 
   
+
+#body-login{
+     background-size: cover; 
+    background-color: #95a5a6 ; 
+     background-image: url("Imagenes/0001.jpg");
+         
+           background-size: 100% 100%;
+          background-attachment: fixed;
+          
+       
+}
+
+  
   /*Perfil*/
 
   .jumbotron{
@@ -232,7 +280,7 @@ footer p {
   #bodyPerfil{
      background-size: cover; 
     background-color: #95a5a6 ; 
-     background-image: url("Imagenes/6.jpg");
+     background-image: url("Imagenes/fondo.jpg");
          
            background-size: 100% 100%;
           background-attachment: fixed;
@@ -253,4 +301,17 @@ footer p {
 .counted{
   
    margin-bottom:2%;
+}
+
+/***Editar***/
+
+#body-editar{
+     background-size: cover; 
+    background-color: #95a5a6 ; 
+     background-image: url("Imagenes/01.jpg");
+         
+           background-size: 100% 100%;
+          background-attachment: fixed;
+          
+       
 }

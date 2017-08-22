@@ -26,7 +26,7 @@ function registerProduct(){
 
         var product = {
             idUser : idUserActive,
-           name: document.getElementById('nombre').value,
+           name: document.getElementById('nombre').value.toLowerCase(),
          category: document.getElementById('categoria').value,
             description: document.getElementById('descripcion').value,
            price: document.getElementById('precio').value,
