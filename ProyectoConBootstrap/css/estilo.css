@@ -335,3 +335,14 @@ footer p {
     background-size: 100% 100%;
     background-attachment: fixed;
 }
+
+/*****Foto*****/
+.img-circle {
+            height: 200px;
+            border: 1px solid #000;
+            margin: 10px 5px 0 0;
+}
+.imagen {
+    text-align: center;
+
+}
